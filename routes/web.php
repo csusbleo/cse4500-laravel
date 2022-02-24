@@ -19,9 +19,6 @@ Route::get('/', function () {
     return view('welcome');
 })->middleware('auth');
 
-Route::get('/home', function () {
-    return view('welcome');
-})->middleware('auth');
 
 Route::get('/db-test', function () {
     return view('db_test');
@@ -30,5 +27,3 @@ Route::get('/db-test', function () {
 Route::get('/db-migrate', function () {
     Artisan::call('migrate');
 });
-
-\URL::forceScheme('https');
