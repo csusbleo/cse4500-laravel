@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,4 +20,8 @@ Route::get('/', function () {
 
 Route::get('/db-test', function () {
     return view('db_test');
+});
+
+Route::get('/db-migrate', function () {
+    Artisan::call('migrate');
 });
