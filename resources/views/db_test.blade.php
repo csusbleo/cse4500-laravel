@@ -3,7 +3,13 @@
     try {
         \DB::connection()->getPDO();
         echo \DB::connection()->getDatabaseName();
-        } catch (\Exception $e) {
-        echo 'None';
+
+        $tables = DB::select('SHOW TABLES');
+        foreach ($tables as $table) {
+            foreach ($table as $key => $value)
+            echo $value;
+        }
+    } catch (\Exception $e) {
+          echo 'None';
     }
 ?>
