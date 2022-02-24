@@ -2,7 +2,7 @@
 <?php
     try {
         \DB::connection()->getPDO();
-        echo = \DB::connection()->getDatabaseName();
+        echo \DB::connection()->getDatabaseName();
 
         $tables = \DB::select('SHOW TABLES');
         foreach ($tables as $table) {
