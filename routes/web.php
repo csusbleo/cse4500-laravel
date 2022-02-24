@@ -20,7 +20,7 @@ Route::get('/', function () {
 
 Route::get('/db-test', function () {
     return view('db_test');
-});
+})->middleware('auth');
 
 Route::get('/db-migrate', function () {
     Artisan::call('migrate');
