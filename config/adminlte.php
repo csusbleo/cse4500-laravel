@@ -252,8 +252,8 @@ return [
             'icon' => 'far fa-fw fa-list-alt'
         ],
         [
-            'text' => 'Schedule',
-            'url'  => 'schedule',
+            'text' => 'Calendar',
+            'url'  => 'calendar',
             'icon' => 'fas fa-fw fa-calendar-alt',
         ],
         [
