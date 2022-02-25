@@ -24,6 +24,7 @@ $( document ).ready(function() {
     var calendar = new FullCalendar.Calendar($('#calendar'), {
       initialView: 'dayGridMonth'
     });
+    calendar.render();
 })
 </script>
 @stop
