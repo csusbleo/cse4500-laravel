@@ -247,19 +247,19 @@ return [
             'can'  => 'manage-blog',
         ],
         [
-            'text' => 'classes',
-            'url'  => 'classes',
+            'text' => 'To Do \'s',
+            'url'  => 'todos',
             'icon' => 'far fa-fw fa-file'
         ],
         [
-            'text' => 'departments',
-            'url'  => 'profile',
-            'icon' => 'fas fa-fw fa-building',
+            'text' => 'Schedule',
+            'url'  => 'appointments',
+            'icon' => 'fas fa-fw fa-calendar',
         ],
         [
-            'text' => 'students',
-            'url'  => 'students',
-            'icon' => 'fas fa-fw fa-users',
+            'text' => 'Notes',
+            'url'  => 'notes',
+            'icon' => 'fas fa-fw fa-files',
         ],
 
     ],
