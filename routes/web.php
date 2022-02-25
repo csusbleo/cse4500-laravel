@@ -29,6 +29,10 @@ Route::get('/schedule', function () {
     return view('schedule');
 });
 
+Route::get('/notes', function () {
+    return view('notes');
+});
+
 Route::get('/admin', function () {
     return view('welcome');
 })->middleware('auth');

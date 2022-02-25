@@ -247,13 +247,13 @@ return [
             'can'  => 'manage-blog',
         ],
         [
-            'text' => 'To Do \'s',
+            'text' => 'To Do\'s',
             'url'  => 'todos',
             'icon' => 'far fa-fw fa-list-alt'
         ],
         [
             'text' => 'Schedule',
-            'url'  => 'appointments',
+            'url'  => 'schedule',
             'icon' => 'fas fa-fw fa-calendar-alt',
         ],
         [
