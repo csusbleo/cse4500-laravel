@@ -29,8 +29,8 @@ Route::get('/schedule', function () {
     return view('schedule');
 });
 
-Route::get('/notes', function () {
-    return view('notes');
+Route::get('/board', function () {
+    return view('board');
 });
 
 Route::get('/admin', function () {
