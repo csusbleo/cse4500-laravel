@@ -257,9 +257,9 @@ return [
             'icon' => 'fas fa-fw fa-calendar-alt',
         ],
         [
-            'text' => 'Notes',
-            'url'  => 'notes',
-            'icon' => 'fas fa-fw fa-file',
+            'text' => 'Board',
+            'url'  => 'board',
+            'icon' => 'fas fa-fw fa-columns',
         ],
 
     ],
