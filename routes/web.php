@@ -33,6 +33,11 @@ Route::get('/board', function () {
     return view('board');
 });
 
+Route::fallback(function () {
+    return view('404');
+});
+
+/*
 Route::get('/admin', function () {
     return view('welcome');
 })->middleware('auth');
@@ -47,3 +52,4 @@ Route::get('/db-test', function () {
 Route::get('/db-migrate', function () {
     Artisan::call('migrate');
 });
+*/
