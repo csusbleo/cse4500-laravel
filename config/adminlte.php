@@ -249,7 +249,7 @@ return [
         [
             'text' => 'To Do \'s',
             'url'  => 'todos',
-            'icon' => 'far fa-fw fa-clipboard-list-check'
+            'icon' => 'far fa-fw fa-list-alt'
         ],
         [
             'text' => 'Schedule',
