@@ -19,9 +19,11 @@
 </div>
 @stop
 @section('js')
-    <script>
-        var calendar = new FullCalendar.Calendar($('#calendar'), {
-          initialView: 'dayGridMonth'
-        });
-    </script>
+<script>
+$( document ).ready(function() {
+    var calendar = new FullCalendar.Calendar($('#calendar'), {
+      initialView: 'dayGridMonth'
+    });
+})
+</script>
 @stop
