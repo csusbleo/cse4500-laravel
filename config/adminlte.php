@@ -369,6 +369,21 @@ return [
                 ],
             ],
         ],
+        'Fullcalendar' => [
+        'active' => true,
+        'files' => [
+            [
+                'type' => 'js',
+                'asset' => false,
+                'location' => '//cdn.jsdelivr.net/npm/fullcalendar@5.10.2/main.min.js',
+            ],
+            [
+                'type' => 'css',
+                'asset' => true,
+                'location' => '//cdn.jsdelivr.net/npm/fullcalendar@5.10.2/main.min.css',
+            ],
+        ],
+    ],
     ],
 
     /*
