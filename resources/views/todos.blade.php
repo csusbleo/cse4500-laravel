@@ -37,7 +37,7 @@
           <input type="checkbox" value="">
         </div>
         <span class="text">Design a database</span>
-        <small class="badge badge-danger"><i class="far fa-clock"></i> 2 mins</small>
+        <small class="badge badge-danger"><i class="far fa-clock"></i> 2 weeks</small>
       </li>
 
 
