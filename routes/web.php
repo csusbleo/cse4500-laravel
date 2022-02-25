@@ -3,6 +3,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\UserController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,6 +24,8 @@ Route::get('/', function () {
 Route::get('/admin', function () {
     return view('welcome');
 })->middleware('auth');
+
+Route::get('/users', [UserController::class, 'index'])->middleware('auth');
 
 
 Route::get('/db-test', function () {
