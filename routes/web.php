@@ -21,6 +21,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/todos', function () {
+    return view('todos');
+});
+
+Route::get('/schedule', function () {
+    return view('schedule');
+});
+
 Route::get('/admin', function () {
     return view('welcome');
 })->middleware('auth');

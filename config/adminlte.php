@@ -254,7 +254,7 @@ return [
         [
             'text' => 'Schedule',
             'url'  => 'appointments',
-            'icon' => 'fas fa-fw fa-calendar',
+            'icon' => 'fas fa-fw fa-calendar-alt',
         ],
         [
             'text' => 'Notes',
