@@ -249,7 +249,7 @@ return [
         [
             'text' => 'To Do \'s',
             'url'  => 'todos',
-            'icon' => 'far fa-fw fa-file'
+            'icon' => 'far fa-fw fa-list-check'
         ],
         [
             'text' => 'Schedule',
@@ -259,7 +259,7 @@ return [
         [
             'text' => 'Notes',
             'url'  => 'notes',
-            'icon' => 'fas fa-fw fa-files',
+            'icon' => 'fas fa-fw fa-file',
         ],
 
     ],
