@@ -21,7 +21,8 @@
 @section('js')
 <script>
 $( document ).ready(function() {
-    var calendar = new FullCalendar.Calendar($('#calendar'), {
+    var calendarEl = document.getElementById('calendar');
+    var calendar = new FullCalendar.Calendar(calendarEl, {
       initialView: 'dayGridMonth'
     });
     calendar.render();
