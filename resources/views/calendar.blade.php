@@ -18,7 +18,13 @@
   </div>
 </div>
 @stop
+
+@section('css')
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/fullcalendar@5.10.2/main.min.css">
+@stop
+
 @section('js')
+<script src="//cdn.jsdelivr.net/npm/fullcalendar@5.10.2/main.min.js" ></script>
 <script>
 $( document ).ready(function() {
     var calendarEl = document.getElementById('calendar');
