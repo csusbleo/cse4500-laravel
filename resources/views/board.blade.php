@@ -3,7 +3,7 @@
 @section('title', 'Board')
 
 @section('content_header')
-    <h1>Kenban Board</h1>
+    <h1>Board</h1>
 @stop
 
 @section('content')
