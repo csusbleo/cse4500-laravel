@@ -8,6 +8,8 @@
 
 @section('content')
 
+
+<div class="container-fluid h-100">
 <div class="card card-row card-secondary">
 <div class="card-header">
 <h3 class="card-title">
@@ -169,6 +171,8 @@ Done
 </div>
 </div>
 </div>
+</div>
+
 
 @stop
 
