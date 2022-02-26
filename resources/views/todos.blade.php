@@ -9,7 +9,7 @@
 @section('content')
 <div class="card">
   <div class="card-body">
-    <table class="table table-bordered">
+    <table id="table" class="table table-bordered">
       <thead>
         <tr>
           <th style="width: 10px">#</th><th>Task</th><th>Progress</th><th style="width: 40px">Label</th>
