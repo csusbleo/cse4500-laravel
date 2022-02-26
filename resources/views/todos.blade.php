@@ -8,51 +8,37 @@
 
 @section('content')
 <div class="card">
-  <div class="card-header ui-sortable-handle" style="cursor: move;">
-    <h3 class="card-title">
-    <i class="ion ion-clipboard mr-1"></i>To Do List</h3>
-  </div>
-
   <div class="card-body">
-    <ul class="todo-list ui-sortable" data-widget="todo-list">
-
-      <li class="done" style="">
-        <span class="handle ui-sortable-handle">
-          <i class="fas fa-ellipsis-v"></i>
-          <i class="fas fa-ellipsis-v"></i>
-        </span>
-        <div class="icheck-primary d-inline ml-2">
-            <input type="checkbox" value="">
-        </div>
-        <span class="text">Make the website responsive</span>
-        <small class="badge badge-info"><i class="far fa-clock"></i> 4 hours</small>
-      </li>
-
-      <li>
-        <span class="handle ui-sortable-handle">
-        <i class="fas fa-ellipsis-v"></i>
-        <i class="fas fa-ellipsis-v"></i>
-        </span>
-        <div class="icheck-primary d-inline ml-2">
-          <input type="checkbox" value="">
-        </div>
-        <span class="text">Design a database</span>
-        <small class="badge badge-danger"><i class="far fa-clock"></i> 2 weeks</small>
-      </li>
-
-
-      <li>
-        <span class="handle ui-sortable-handle">
-          <i class="fas fa-ellipsis-v"></i>
-          <i class="fas fa-ellipsis-v"></i>
-        </span>
-        <div class="icheck-primary d-inline ml-2">
-          <input type="checkbox" value="">
-        </div>
-        <span class="text">Testing</span>
-        <small class="badge badge-secondary"><i class="far fa-clock"></i> 1 month</small>
-      </li>
-  </ul>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th style="width: 10px">#</th><th>Task</th><th>Progress</th><th style="width: 40px">Label</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1.</td>
+          <td>Update software</td>
+          <td><div class="progress progress-xs"><div class="progress-bar progress-bar-danger" style="width: 55%"></div></div></td>
+          <td><span class="badge bg-danger">55%</span></td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td>Clean database</td>
+          <td><div class="progress progress-xs"><div class="progress-bar bg-warning" style="width: 70%"></div></div></td>
+          <td><span class="badge bg-warning">70%</span></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>
+@stop
+
+
+@section('js')
+<script>
+    $(document).ready(function() {
+        $('#table').DataTable();
+    } );
+</script>
 @stop
