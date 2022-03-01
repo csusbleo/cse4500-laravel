@@ -11,7 +11,7 @@ return new class extends Migration
         if (Schema::hasTable('users')) {
             // The "users" table exists...
             Schema::table('users', function (Blueprint $table) {
-                $table->string('role');
+                $table->string('role')->nullable();
             });
         }
     }
