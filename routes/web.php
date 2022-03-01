@@ -59,12 +59,12 @@ Route::get('/admin', function () {
 })->middleware('auth');
 
 Route::get('/users', [UserController::class, 'index'])->middleware('auth');
-
+*/
 
 Route::get('/db-test', function () {
     return view('db_test');
 })->middleware('auth');
-*/
+
 Route::get('/db-migrate', function () {
     Artisan::call('migrate');
     echo Artisan::output();
