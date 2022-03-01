@@ -67,6 +67,6 @@ Route::get('/db-test', function () {
 */
 Route::get('/db-migrate', function () {
     Artisan::call('migrate');
-    Artisan::output();
+    echo Artisan::output();
 });
 
