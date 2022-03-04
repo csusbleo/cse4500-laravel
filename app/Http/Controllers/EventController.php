@@ -43,8 +43,8 @@ class EventController extends Controller
 
       $todo = Todo::create([
            'title' => $request->title,
-           'start_at' => $request->start_at,
-           'end_at' => $request->end_at,
+           'start_at' => date("Y-m-d H:i:s", strtotime($request->start_at)),
+           'end_at' => date("Y-m-d H:i:s", strtotime($request->end_at)),
       ]);
 
       return $this->index();
