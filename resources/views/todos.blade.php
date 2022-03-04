@@ -12,7 +12,7 @@
     <table id="table" class="table table-bordered">
       <thead>
         <tr>
-          <th style="width: 10px">#</th><th>Task</th><th>Progress</th><th style="width: 40px">Label</th>
+          <th style="width: 10px">#</th><th>Task</th><th>Progress</th><th style="width: 40px">Action</th>
         </tr>
       </thead>
       <tbody>
@@ -21,7 +21,7 @@
           <td>{{ $todo->id }}</td>
           <td>{{ $todo->title }}</td>
           <td><div class="progress progress-xs"><div class="progress-bar progress-bar-danger" style="width: {{ $todo->progress }}%"></div></div></td>
-          <td><span class="badge bg-danger">{{ $todo->progress }}%</span></td>
+          <td><a class="btn btn-default btn-sm" href="{{ route('todos.show',['id'=>$todo->id]) }}">View</a></td>
         </tr>
         @endforeach
       </tbody>
