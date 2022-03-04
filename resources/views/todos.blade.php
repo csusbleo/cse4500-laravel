@@ -27,6 +27,7 @@
       </tbody>
     </table>
   </div>
+  <a href="{{ route('todos.create') }} " class="btn btn-primary" >Create</a>
 </div>
 @stop
 
