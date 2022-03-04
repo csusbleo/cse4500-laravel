@@ -3,6 +3,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\EventController;
 use App\Http\Controllers\TodoController;
 use App\Http\Controllers\UserController;
 
@@ -24,9 +25,7 @@ Route::get('/', function () {
 
 Route::resource('/todos', TodoController::class);
 
-Route::get('/calendar', function () {
-    return view('calendar');
-});
+Route::resource('/calendar', EventController::class);
 
 Route::get('/board', function () {
     return view('board');
