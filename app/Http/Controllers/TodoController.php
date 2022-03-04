@@ -17,7 +17,7 @@ class TodoController extends Controller
 
     public function create()
     {
-        return view('todo.create');
+        return view('todos.create');
     }
 
 
@@ -39,7 +39,7 @@ class TodoController extends Controller
 
     public function show($id)
     {
-        $todo= Todo::find($id); 
+        $todo= Todo::find($id);
         return view('todos.show',compact('todo'));
     }
 
