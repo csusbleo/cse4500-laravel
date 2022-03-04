@@ -3,6 +3,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\TodoController;
 use App\Http\Controllers\UserController;
 
 /*
@@ -21,9 +22,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/todos', function () {
-    return view('todos');
-});
+Route::resource('/todos', TodoController::class);
 
 Route::get('/calendar', function () {
     return view('calendar');
@@ -69,4 +68,3 @@ Route::get('/db-migrate', function () {
     Artisan::call('migrate');
     echo Artisan::output();
 });
-
