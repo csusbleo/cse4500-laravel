@@ -375,17 +375,17 @@ return [
                 [
                     'type' => 'css',
                     'asset' => false,
-                    'location' => '/vendor/daterangepicker/daterangepicker.css',
+                    'location' => '//cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css',
                 ],
                 [
                     'type' => 'js',
                     'asset' => false,
-                    'location' => '/vendor/moment/moment.min.js',
+                    'location' => '//cdn.jsdelivr.net/momentjs/latest/moment.min.js',
                 ],
                 [
                     'type' => 'js',
                     'asset' => false,
-                    'location' => '/vendor/daterangepicker/daterangepicker.js',
+                    'location' => '//cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js',
                 ],
             ],
         ],
