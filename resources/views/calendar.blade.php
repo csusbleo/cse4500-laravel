@@ -4,7 +4,7 @@
 
 @section('content_header')
     <h1>Calendar</h1>
-    <x-adminlte-button class="pull-right btn-success" type="button" label="Add a New Event" />
+    <a href="{{ route('calendar.create') }}" class="btn pull-right btn-success" >Add a New Event</a>
 @stop
 
 @section('content')
