@@ -4,6 +4,7 @@
 
 @section('content_header')
     <h1>Calendar</h1>
+    <x-adminlte-button class="pull-right btn-success" type="button" label="Add a New Event" />
 @stop
 
 @section('content')
