@@ -369,7 +369,26 @@ return [
                 ],
             ],
         ],
-
+        'daterangepicker' => [
+            'active' => false,
+            'files' => [
+                [
+                    'type' => 'css',
+                    'asset' => false,
+                    'location' => '/vendor/daterangepicker/daterangepicker.css',
+                ],
+                [
+                    'type' => 'js',
+                    'asset' => false,
+                    'location' => '/vendor/moment/moment.min.js',
+                ],
+                [
+                    'type' => 'js',
+                    'asset' => false,
+                    'location' => '/vendor/daterangepicker/daterangepicker.js',
+                ],
+            ],
+        ],
     ],
 
     /*
