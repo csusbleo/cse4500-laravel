@@ -6,8 +6,6 @@
     <h1>New Event</h1>
 @stop
 
-@section('plugins.daterangepicker', true)
-
 @section('content')
 <form method="post" action="{{ route('calendar.store') }}" >
     @csrf
