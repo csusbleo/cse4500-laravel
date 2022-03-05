@@ -19,7 +19,7 @@ class EventController extends Controller
 
     public function feed()
     {
-        $events = Event::select('title','start_at AS start', 'end_at AS end');
+        $events = Event::select('title','start_at AS start', 'end_at AS end')->get();
         return json_encode($events);
     }
 
