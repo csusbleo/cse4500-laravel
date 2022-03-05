@@ -31,7 +31,7 @@ Route::get('/events-feed',[EventController::class,'feed']);
 Route::get('/board', function () {
     return view('board');
 });
-
+/*
 Route::get('/events-feed', function () {
     $data = array(
       array(
@@ -47,7 +47,7 @@ Route::get('/events-feed', function () {
     );
     return json_encode($data);
 });
-
+*/
 Route::fallback(function () {
     return view('404');
 });
