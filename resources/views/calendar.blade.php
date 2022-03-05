@@ -4,7 +4,7 @@
 
 @section('content_header')
     <h1>Calendar</h1>
-    <a href="{{ route('calendar.create') }}" class="btn pull-right btn-success" >Add a New Event</a>
+    <a href="{{ route('calendar.create') }}" class="btn float-right btn-success" >Add a New Event</a>
 @stop
 
 @section('content')
