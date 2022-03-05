@@ -26,6 +26,7 @@ Route::get('/', function () {
 Route::resource('/todos', TodoController::class);
 
 Route::resource('/calendar', EventController::class);
+Route::get('/events-feed',[EventController::class,'feed']);
 
 Route::get('/board', function () {
     return view('board');

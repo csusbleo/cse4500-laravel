@@ -17,6 +17,12 @@ class EventController extends Controller
         return view('calendar');
     }
 
+    public function feed()
+    {
+        $events = Event::select('title','start_at AS start', 'end_at AS end');
+        return json_encode($events);
+    }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -41,7 +47,7 @@ class EventController extends Controller
            'end_at' => 'required',
       ]);
 
-      $todo = Todo::create([
+      $todo = Event::create([
            'title' => $request->title,
            'start_at' => date("Y-m-d H:i:s", strtotime($request->start_at)),
            'end_at' => date("Y-m-d H:i:s", strtotime($request->end_at)),
