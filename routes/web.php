@@ -23,14 +23,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('/todos', TodoController::class);
-
-Route::resource('/calendar', EventController::class);
-Route::get('/events-feed',[EventController::class,'feed']);
-
-Route::get('/board', function () {
-    return view('board');
-});
 /*
 Route::get('/events-feed', function () {
     $data = array(
@@ -67,4 +59,13 @@ Route::get('/db-test', function () {
 Route::get('/db-migrate', function () {
     Artisan::call('migrate');
     echo Artisan::output();
+});
+
+Route::resource('/todos', TodoController::class);
+
+Route::resource('/calendar', EventController::class);
+Route::get('/events-feed',[EventController::class,'feed']);
+
+Route::get('/board', function () {
+    return view('board');
 });
