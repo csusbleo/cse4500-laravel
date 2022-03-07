@@ -23,7 +23,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-/*
+Route::get('/todo', function () {
+    return view('todo');
+});
+
+Route::get('/calendar', function () {
+    return view('calendar');
+});
+
+Route::get('/board', function () {
+    return view('board');
+});
+
 Route::get('/events-feed', function () {
     $data = array(
       array(
@@ -39,10 +50,25 @@ Route::get('/events-feed', function () {
     );
     return json_encode($data);
 });
-*/
+
 Route::fallback(function () {
     return view('404');
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 Route::get('/admin', function () {
@@ -66,6 +92,4 @@ Route::resource('/todos', TodoController::class);
 Route::resource('/calendar', EventController::class);
 Route::get('/events-feed',[EventController::class,'feed']);
 
-Route::get('/board', function () {
-    return view('board');
-});
+
