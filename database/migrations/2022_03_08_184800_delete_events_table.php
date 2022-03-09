@@ -8,9 +8,6 @@ return new class extends Migration
 {
     public function up()
     {
-        if (Schema::hasTable('events')) {
-            // The "users" table exists...
-            
-        }
+        Schema::dropIfExists('events');
     }
 };
