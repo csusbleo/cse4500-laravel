@@ -71,7 +71,7 @@ Route::get('/db-migrate', function () {
     echo Artisan::output();
 });
 
-Route::get('/db-refresh', function () {
+Route::get('/db-rollback', function () {
     Artisan::call('migrate:rollback');
     echo Artisan::output();
 });
