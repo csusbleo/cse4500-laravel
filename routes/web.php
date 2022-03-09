@@ -23,14 +23,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/todo', function () {
-    return view('todo');
-});
-
-Route::get('/calendar', function () {
-    return view('calendar');
-});
-
 Route::get('/board', function () {
     return view('board');
 });
@@ -62,14 +54,6 @@ Route::fallback(function () {
 
 
 
-
-
-
-
-
-
-
-
 /*
 Route::get('/admin', function () {
     return view('welcome');
@@ -84,6 +68,11 @@ Route::get('/db-test', function () {
 
 Route::get('/db-migrate', function () {
     Artisan::call('migrate');
+    echo Artisan::output();
+});
+
+Route::get('/db-refresh', function () {
+    Artisan::call('migrate:rollback');
     echo Artisan::output();
 });
 
