@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn(['id', 'name', 'password', 'email']);
+            $table->dropColumn(['id', 'username', 'password', 'email']);
         });
         Schema::table('users', function (Blueprint $table) {
             $table->id();
