@@ -261,6 +261,11 @@ return [
             'url'  => 'board',
             'icon' => 'fas fa-fw fa-columns',
         ],
+        [
+            'text' => 'Classes',
+            'url'  => 'class',
+            'icon' => 'fas fa-fw fa-columns',
+        ],
 
     ],
 
