@@ -21,5 +21,5 @@ Route::post('login', [RegisterController::class, 'login']);
 
 
 Route::middleware('auth:api')->group( function () {
-    Route::get('/events-feed',[EventController::class,'feed']);
+    Route::post('/events-feed',[EventController::class,'feed']);
 });
