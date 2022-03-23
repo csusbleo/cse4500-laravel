@@ -78,6 +78,10 @@ Route::get('/db-rollback', function () {
     echo Artisan::output();
 });
 
+Route::get('/passport-key', function () {
+    Artisan::call('passport:keys --force');
+});
+
 Route::resource('/todos', TodoController::class);
 
 Route::resource('/calendar', EventController::class);
