@@ -78,6 +78,11 @@ Route::get('/db-rollback', function () {
     echo Artisan::output();
 });
 
+Route::get('/passport-install', function () {
+    Artisan::call('passport:install');
+});
+
+
 Route::get('/passport-key', function () {
     Artisan::call('passport:keys --force');
 });
